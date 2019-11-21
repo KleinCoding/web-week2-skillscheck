@@ -43,15 +43,24 @@ let me = {
 }
 //////////////////Step 4////////////////////
 //Create a function called 'setColor' that takes in one parameter called 'arr' that is an array of colors. Make sure that we only ever have three colors by using splice to trim the array to just 3 colors. 
-function setColor(arr){
-    if(arr.length > 3){
-        arr.splice(3)
-    }
 
-}
 // Next, create a for loop to loop over the remaining three colors. If any of the colors is 'blue', change it's value to '#4D4DFF' (which is just a more appealing shade of blue). Outside of the for loop but still inside of setColor, invoke the function called 'background' which will take in three arguments. These arguments should be the three items remaining in your colors array. 
 
 // CODE HERE
+
+function setColor(arr){
+    for (var i = arr.length - 1; i >= 0; i--)
+    {
+      if(arr.length > 3)
+      {arr.splice(3)}
+      if(arr.indexOf('Blue') >= 0)
+      {arr.splice(arr.indexOf("Blue"), 1, "#4D4FF")}
+    }
+    background(i[0], i[1],i[3])
+  }
+  
+  setColor(favColors)
+  
 
 //////////////////Step 5////////////////////
 //Create a function called 'setPowers' that takes in 'arr' as a parameter. In your setPowers function, loop over the arr parameter and run a function we created called createLi(), which will take each item of the array as an argument. Remember, you did not create the createLi function. The createLi function is a function we created that determines how the content is displayed.
