@@ -6,6 +6,8 @@
 
 // CODE HERE
 
+let favColors = ["Green", "Red", "Pink"]
+
 //////////////////Step 2////////////////////
 // Create an object called 'me' that has these keys: firstname, superHeroName, homeTown, superPowers, superPowerXP, and profileImage. 
 
@@ -27,10 +29,26 @@
 // In this step, you will create three variables that will hold some data from your me object. The first variable you create should be 'regularName', and it should receive its value from the value of your firstName key on the me object above. The next variable is 'superName' which should have its value assigned as the value of the superHeroName property on the me object. The last variable you should create is 'homeTown' which will be the value of homeTown on the me object
 
 // CODE HERE
-
+let me = {
+    firstname: "Jason",
+    superHeroName: "JayFoam",
+    homeTown: "Besaid",
+    superPowers: ['Rising Tide', "Vortex", "Bubblebeam"],
+    superPowerXP: function(){
+        Math.floor(math.random() * 100) +1
+    },
+    profileImage: function(){
+        return("https://randomuser.me/api/portraits/med/lego/${Math.floor(Math.random() * 10) + 1 }.jpg`")
+    },
+}
 //////////////////Step 4////////////////////
 //Create a function called 'setColor' that takes in one parameter called 'arr' that is an array of colors. Make sure that we only ever have three colors by using splice to trim the array to just 3 colors. 
+function setColor(arr){
+    if(arr.length > 3){
+        arr.splice(3)
+    }
 
+}
 // Next, create a for loop to loop over the remaining three colors. If any of the colors is 'blue', change it's value to '#4D4DFF' (which is just a more appealing shade of blue). Outside of the for loop but still inside of setColor, invoke the function called 'background' which will take in three arguments. These arguments should be the three items remaining in your colors array. 
 
 // CODE HERE
