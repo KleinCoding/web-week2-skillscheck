@@ -96,7 +96,7 @@ html {
         background-color: #A4FED8;
         border-spacing: 50em;
         display: inline-block;
-        border-radius: 15%;
+        border-radius: 10%;
         padding:93px;
         margin:50x;
         justify-content:center;
@@ -109,7 +109,8 @@ html {
     /* border: blue dashed; */
     width: 100%;
     height: 200px;
-    justify-content:space-around;
+    margin-right: 800em;
+    justify-content:space-evenly;
     flex:wrap;
 
 }
@@ -142,8 +143,8 @@ html {
         }
         .photobox{
             background-image: url('./dikdikresize2.png');
-            width: 225px;
-            height: 125px;
+            width: 200px;
+            height: 120px;
         }
 
         .footer {
