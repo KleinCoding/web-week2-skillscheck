@@ -1,0 +1,170 @@
+/*Font Imports */
+@import url('https://fonts.googleapis.com/css?family=Dosis|Oswald|PT+Sans+Narrow&display=swap');
+
+
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 0;
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  nav {
+    width: 100%;
+    background-color: grey;
+    padding-left: 30px;
+    padding-right: 10px;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 100;
+ 
+  }
+  .navbar {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+  }
+  
+  .logo {
+    display: inline-block;
+  }
+  
+  .nav-links {
+    display:flex;
+    list-style: none;
+  }
+  
+  .nav-item a {
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+  }
+  
+  .nav-item:hover {
+    background-color: white;
+  }
+  
+  .nav-item:hover a {
+    color: grey;
+  }
+  
+  .logo {
+    color: white;
+  }
+
+  .top-box-black{
+    width:100%;
+    height:260px;
+    background-color:black;
+    text-align: center;
+    align-items: center;
+    vertical-align: center;
+    color:#DBD662;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    
+    .know{
+        font-family: Oswald;
+        font-size: 6vw;
+    }
+
+    .center-box-clear{
+        padding-top: 20px;
+        padding-bottom:10px;
+        display:flex;
+        /* border: red dashed; */
+        width: 100%;
+        height: 200px;
+        justify-content:space-around;
+        flex:wrap;
+    }
+
+    .tealbox{
+        background-color: #A4FED8;
+        border-spacing: 50em;
+        display: inline-block;
+        border-radius: 15%;
+        padding:93px;
+        margin:50x;
+        justify-content:center;
+        width: 100px;
+        height: 85px;
+    }
+.middle-box-clear{
+    padding-top: 30px;
+    display:flex;
+    /* border: blue dashed; */
+    width: 100%;
+    height: 200px;
+    justify-content:space-around;
+    flex:wrap;
+
+}
+    .orangebox{
+        background-color:#FFC36B;
+        width: 350px;
+        height: 170px;
+    }
+
+    .bottom-box-clear{
+        padding-top: 30px;
+        display:flex;
+        /* border: green dashed; */
+        width: 100%;
+        height: 150px;
+        /* justify-content:space-between; */
+        justify-content: space-evenly;
+        flex:wrap;
+    
+    }
+        .textbox{
+            /* background-color:#FFC36B; */
+            width: 350px;
+            height: 120px;
+        }
+        .nonsense{
+            text-align: justify;
+            font-size: 1vw;
+            font-family: 'Dosis', sans-serif;
+        }
+        .photobox{
+            background-image: url('./dikdikresize2.png');
+            width: 225px;
+            height: 125px;
+        }
+
+        .footer {
+            position: fixed;
+            height: 80px;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #3A3A54;
+            color: white;
+            text-align: center;
+        }
+
+        /* .footer {
+            width: 100%;
+            background-color: grey;
+            padding-left: 30px;
+            padding-right: 10px;
+            font-family: 'Dosis', sans-serif;
+            font-weight: 100;
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+        } */
