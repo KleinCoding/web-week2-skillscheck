@@ -25,13 +25,13 @@ let favColors = ["Green", "Red", "Pink"]
 
 // CODE HERE
 
-let me = {
+const me = {
     firstname: "Jason",
     superHeroName: "JayFoam",
     homeTown: "Besaid",
     superPowers: ['Rising Tide', "Vortex", "Bubblebeam"],
     superPowerXP: function(){
-        Math.floor(math.random() * 100) +1
+        return Math.floor(math.random() * 100) +1
     },
     profileImage: function(){
         return(`https://randomuser.me/api/portraits/med/lego/${Math.floor(Math.random() * 10) + 1 }.jpg`)
@@ -60,7 +60,7 @@ function setColor(arr){
       if(arr.indexOf('Blue') >= 0)
       {arr.splice(arr.indexOf("Blue"), 1, "#4D4FF")}
     }
-    background(i[0], i[1],i[3])
+    background(arr[0], arr[1],arr[2])
   }
   
   setColor(favColors)
@@ -73,11 +73,10 @@ function setColor(arr){
 
 function setPowers(arr){
     for (var i = arr.length - 1; i >= 0; i--){
-      createLi(i[1],i[2],i[3])
+      createLi(arr[i])
     }
     
     }
-    
     
     
 
@@ -89,8 +88,6 @@ function redactInfo(obj){
     for(let key in obj){
      obj[key] = 'redacted' 
     }
-
   redacted()
-  
   }
   

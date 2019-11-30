@@ -205,18 +205,29 @@ const forTheLoveOfGeorge = notGeorge.map(x => "George");
 
 // Using the people array, filter out everyone that isn't a friend into a new array called 'enemies'. Use .filter(). 
 const people = [
-	{ name: 'Matt', friend: true, awesomeLevel: 10 },
-	{ name: 'Matias', friend: true, awesomeLevel: 10 },
-	{ name: 'Catie', friend: false, awesomeLevel: 3 },
-	{ name: 'Samantha', friend: false, awesomeLevel: 4 },
-	{ name: 'Jonathan', friend: true, awesomeLevel: 8 },
-	{ name: 'Josh', friend: true, awesomeLevel: 7 }
+	{ name: 'Landy', friend: true, awesomeLevel: 10 },
+	{ name: 'Jeremy', friend: true, awesomeLevel: 10 },
+	{ name: 'Bart', friend: false, awesomeLevel: 3 },
+	{ name: 'Stephanie', friend: false, awesomeLevel: 6 },
+	{ name: 'Serena', friend: true, awesomeLevel: 8 },
+	{ name: 'George', friend: true, awesomeLevel: 7 }
 ]
 
 // Code Here
 
+
+let enemies = people.filter(function(enemy) {
+	return enemy.friend === false;
+  
+  }
+  )
 //////////////////PROBLEM 20////////////////////
 
 // Using the people array above, get a total of the awesomeLevel from all the people, and store that value in a variable named 'totallyAwesome'. Use .reduce().
+
+let totallyAwesome = people.reduce(function(a, c){
+
+	return a + c.awesomeLevel;
+}, 0)
 
 // Code Here
